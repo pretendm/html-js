@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>film</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="film.css" />
+<script type="text/javascript">
+function adver(d1) {
+	var NowFrame = 1;   //最先显示第一张图片
+	var MaxFrame = 9;   //一共五张图片
+	if(Number(d1)){
+		clearTimeout(theTimer);  //当触动按扭时，清除计时器
+		NowFrame=d1;                //设当前显示图片
+		}
+	for(var i=1;i<(MaxFrame+1);i++){
+		if(i==NowFrame){
+			document.getElementById("dog").src ="images/dog"+i+".jpg";   //显示当前图片
+		 }
+	}
+	if(NowFrame == MaxFrame){   //设置下一个显示的图片
+		NowFrame = 1;
+		}
+	else{
+		NowFrame++;
+		}
+}
+window.onload=adver;    //页面加载时运行函数adver()
+var theTimer=setInterval('adver()', 3000);   //设置定时器，显示下一张图片
+</script>
+
+</head>
+
+<body>
+	<div id="meta">
+    <span><img src="images/meta1.gif" alt="" width="15" height="15" /> <a href="index.html">首页</a></span>																																																				<div style="position:absolute;top:1px;left:1px;height:0px;width:0px;overflow:hidden"><h1><a href="http://www.cssmoban.com">best free templates</a></h1></div>
+		<span><img src="images/meta2.gif" alt="" width="15" height="15" /> <a href="index2.html">论坛</a></span>
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="index.html"><img src="images/but1.jpg" alt="" width="104" height="36" /></a></li>																														
+			<li><a href="hero.html"><img src="images/but2.jpg" alt="" width="104" height="36" /></a></li>
+			<li><a href="knowledge.html"><img src="images/but3.jpg" alt="" width="104" height="36" /></a></li>
+			<li><a href="protect.html"><img src="images/but4.jpg" alt="" width="104" height="36" /></a></li>
+			<li><a href="film.html" class="active"><img src="images/but5.jpg" alt="" width="104" height="36" /></a></li>
+			<li><a href="luntan.html"><img src="images/but6.jpg" alt="" width="104" height="36" /></a></li>
+		</ul>
+	</div>
+	<div id="content">
+    	<div class="content_d">
+		<div class="navigation">
+        <div class="navigation_t">重点推荐九部</div>
+			<ul>
+				<li><a href="javascript:adver(1)" class="advers">丛林赤子心</a></li>
+				<li><a href="javascript:adver(2)" class="advers">南极大冒险</a></li>
+				<li><a href="javascript:adver(3)" class="advers">马利与我</a></li>
+				<li><a href="javascript:adver(4)" class="advers">狗狗与我的十个约定</a></li>
+				<li><a href="javascript:adver(5)" class="advers">人狗奇缘</a></li>
+				<li><a href="javascript:adver(6)" class="advers">导盲犬小Q</a></li>
+				<li><a href="javascript:adver(7)" class="advers">新灵犬莱西</a></li>
+				<li><a href="javascript:adver(8)" class="advers">雪地狂奔</a></li>
+				<li><a href="javascript:adver(9)" class="advers">忠犬八公</a></li>
+			</ul>
+		</div>
+        
+		<div class="center">
+			<div class="welcome">
+			 <img src="images/dog1.jpg" id="dog" />
+			</div>
+			<div class="text">
+				丛林赤子心:狗狗Benji流落野外的故事，Benji发现有一只豹妈妈被猎人射杀，留下孤苦无依的四只小豹，Benji在恻隐之心的驱使下，担负起照顾四只小豹的任务，放弃了好几回它可以回家的机会。
+			</div>
+            <hr />
+           </div>
+           <div class="content_dd">
+           <div class="content_t1">关于狗的电影</div><div class="content_t2">相关的资讯</div>
+           <table class="content_ta">
+            <tr><td><div class="content_txt1">关于狗的电影：难以置信的旅程（1967）Homeward Bound</div>
+            <div class="content_txt2">9-12&nbsp;&nbsp;&nbsp;&nbsp;6772阅读&nbsp;&nbsp;&nbsp;&nbsp; 23评论</div>
+            <div class="content_txt3">两只狗一只猫在迪斯尼公司工作人员的奇思妙想中开始了一段奇幻旅程，忠诚与决心让这些小动物不顾一切寻找主人。它们在旅途中学习如何携手合作，谋求共同利益。 <a href="#">[详情]</a></div> 
+            </td></tr>
+             <tr><td><div class="content_txt1">关于狗的电影忠实山姆（1963）Savage Sam</div>
+            <div class="content_txt2">8-05&nbsp;&nbsp;&nbsp;&nbsp;6555阅读&nbsp;&nbsp;&nbsp;&nbsp; 35评论</div>
+            <div class="content_txt3">狗取名Sam。在故事中，哥哥Travis、弟弟Arliss以及与他们青梅竹马的女孩遇到许多难关，忠心的Sam一心想救助主人，因此尾随而来。后来经过一番对抗，才终于成功击败印第安人，救出了孩子们。 <a href="#">[详情]</a></div> 
+            </td></tr>
+            <tr><td><div class="content_txt1">关于狗的电影：北地异犬历奇（1961）Wiid God of the North</div>
+            <div class="content_txt2">8-02&nbsp;&nbsp;&nbsp;&nbsp;452阅读&nbsp;&nbsp;&nbsp;&nbsp; 10评论</div>
+            <div class="content_txt3">在现在大热的南极北京动物冒险电影，这部老祖宗级的狗狗冒险电影，就是这些电影的前身。这部没有什么特效的电影第一次展现了工作犬的真实魅力，你可以不接受它的陈旧，但你不得不承认它的真诚。 <a href="#">[详情]</a></div> 
+            </td></tr>
+           </table>
+           </div> 
+		</div>
+		<div class="news_events">
+        <div class="news_t">其他推荐</div>
+		<table>
+        <tr>
+          <td><img src="images/end1.jpg"/>
+            <div><a href="">天才眼镜狗</a></div></td>
+            <td><img src="images/end2.jpg" />
+            <div><a href="">藏獒多吉</a></div></td>
+        </tr>
+        <tr>
+          <td><img src="images/end3.jpg" />
+            <div><a href="">狗狗心事</a></div></td>
+            <td><img src="images/end4.jpg" />
+            <div><a href="">雪人与爱犬</a></div></td>
+        </tr>
+         <tr>
+          <td><img src="images/end5.jpg" />
+            <div><a href="">老友狗狗</a></div></td>
+            <td><img src="images/end6.jpg" />
+            <div><a href="">爱犬的奇迹</a></div></td>
+        </tr>
+         <tr>
+          <td><img src="images/end7.jpg" />
+            <div><a href="">小姐与流浪狗</a></div></td>
+            <td><img src="images/end8.jpg" />
+            <div><a href="">向日葵与爱犬的7天</a></div></td>
+        </tr>
+        <tr class="table_tr">
+        	<td colspan="2"><div class="table_yema"><a href="">1</a></div><div class="table_yema1"><a href="">2</a></div><div class="table_yema1"><a href="">3</a></div><div class="table_yema3">...</div><div class="table_yema1"><a href="">6</a></div><div class="table_yema2"><a href="">下一页</a></div></td>
+        </tr>
+    </table>	
+			
+			
+			
+		</div>
+		<img src="images/phone.jpg" alt="" width="953" height="87" /><br />
+  	</div>
+		
+  	</div>
+	
+	<div id="footer">
+		<div>
+			<a href="index.html">首页</a> | <a href="hero">事迹</a> | <a href="knowledge.html">知识</a> | <a href="peotect.html">保护</a> | <a href="film.html">电影</a> | <a href="luntan">论坛</a>
+		</div>
+	</div>
+	<div id="copyright">
+		Copyright &copy;. All rights reserved. Design from <a href="http://www.cssmoban.com" target="_blank" title="Free Templates">zjweu.edu.com</a>
+	</div>
+</body>
+</html>

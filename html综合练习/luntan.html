@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>luntan</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="luntan.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function adver(d1) {
+	var NowFrame = 1;   //最先显示第一张图片
+	var MaxFrame = 4;   //一共五张图片
+	if(Number(d1)){
+		clearTimeout(theTimer);  //当触动按扭时，清除计时器
+		NowFrame=d1;                //设当前显示图片
+		}
+	for(var i=1;i<(MaxFrame+1);i++){
+		if(i==NowFrame){
+			document.getElementById("nav").src ="images/nav_"+i+".jpg";   //显示当前图片
+		 }
+	}
+	if(NowFrame == MaxFrame){   //设置下一个显示的图片
+		NowFrame = 1;
+		}
+	else{
+		NowFrame++;
+		}
+
+
+window.onload=adver;    //页面加载时运行函数adver()
+}
+var theTimer=setInterval('adver()', 3000);   //设置定时器，显示下一张图片
+</script>
+</head>
+
+<body>
+	<div id="meta">
+    <span><img src="images/meta1.gif" alt="" width="15" height="15" /> <a href="index.html">首页</a></span>																																																				<div style="position:absolute;top:1px;left:1px;height:0px;width:0px;overflow:hidden"><h1><a href="http://www.cssmoban.com">best free templates</a></h1></div>
+		<span><img src="images/meta2.gif" alt="" width="15" height="15" /> <a href="index2.html">论坛</a></span>
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="index.html"><img src="images/but1.jpg" alt="" width="104" height="36" /></a></li>																														
+			<li><a href="hero.html"><img src="images/but2.jpg" alt="" width="104" height="36" /></a></li>
+			<li><a href="knowledge.html"><img src="images/but3.jpg" alt="" width="104" height="36" /></a></li>
+			<li><a href="protect.html"><img src="images/but4.jpg" alt="" width="104" height="36" /></a></li>
+			<li><a href="film.html"><img src="images/but5.jpg" alt="" width="104" height="36" /></a></li>
+			<li><a href="luntan.html"  class="active"><img src="images/but6.jpg" alt="" width="104" height="36" /></a></li>
+		</ul>
+	</div>
+<div id="content">
+	  <div class="navigation">
+		<div class="navigation_t"><img src="images/nav_1.jpg" id="nav"/></div>
+        <div class="navigation_d">
+            <a href="javascript:adver(1)" class="advers"><img src="images/nav_11.jpg"/></a>
+            <a href="javascript:adver(2)" class="advers"><img src="images/nav_21.jpg"/></a>
+            <a href="javascript:adver(3)" class="advers"><img src="images/nav_31.jpg"/></a>
+            <a href="javascript:adver(4)" class="advers"><img src="images/nav_41.jpg"/></a>
+            </div>
+	  </div>
+	  <div class="center">
+			<div class="welcome">
+			<div class="welcome_txt"><a href="#"><font color="#FF8721">[串串版]</font>&nbsp;我们带着信仰飞奔而来，欢乐而去</a></div>
+            <div class="welcome_txt"><a href="#"><font color="#FF8721">[田园犬版]</font>&nbsp;给波波配了个定位，简直帅呆了</a></div>
+            <div class="welcome_txt"><a href="#"><font color="#FF8721">[上海版]</font>&nbsp;人少狗少草坪大，真是人间仙境啊</a></div>
+            <div class="welcome_txt"><a href="#"><font color="#FF8721">[铃铛圈]</font>&nbsp;为了躲避法国遍地开花的足球骚乱</a></div>	
+            <div class="welcome_txt"><a href="#"><font color="#FF8721">[北京版]</font>&nbsp;七星遛狗圣地精彩回顾！不得不看</a></div>
+            <div class="welcome_txt"><a href="#"><font color="#FF8721">[山西版]</font>&nbsp;天上下雨地上流，夫妻吵架不记仇</a></div>
+            <div class="welcome_txt"><a href="#"><font color="#FF8721">[哈士奇版]</font>&nbsp;狗子吃我的喝我的，竟然还吃烟</a></div>
+			</div>
+			<div class="welcome_d">
+            <table class="welcome_ta" cellpadding="0" cellspacing="0">
+            	<tr class="welcome_ta1">
+                	<td><a href="">24小时热帖</a></td><td><a href="#">最新回复</a></td><td><a href="#">最新贴</a></td><td width="51"></td>
+                </tr>
+                <tr class="welcome_ta2">
+                	<td colspan="3" style="padding-left:15px;"><a href="#">手术结束了</a></td><td style="color:#949494;">06-14</td>
+                </tr>
+                <tr class="welcome_ta2">
+                	<td colspan="3" style="padding-left:15px;"><a href="#" style="color:#996600;">让我们为重伤的贝贝祈福</a></td><td style="color:#949494;">06-14</td>
+                </tr>
+                <tr class="welcome_ta2">
+                	<td colspan="3" style="padding-left:15px;"><a href="#">大家发发你们狗狗造型后的照片吧！</a></td><td style="color:#949494;">06-14</td>
+                </tr>
+                <tr class="welcome_ta2">
+                	<td colspan="3" style="padding-left:15px;"><a href="#">感谢虎大平时给我的灵感~</a></td><td style="color:#949494;">06-14</td>
+                </tr>
+                <tr class="welcome_ta2">
+                	<td colspan="3" style="padding-left:15px;"><a href="#">四十天狗狗一天拉一次没事吧？</a></td><td style="color:#949494;">06-14</td>
+                </tr>
+                <tr class="welcome_ta2">
+                	<td colspan="3" style="padding-left:15px;"><a href="#" style="color:#F00;">金毛版6月14日报道贴</a></td><td style="color:#949494;">06-14</td>
+                </tr>
+                
+            </table>
+            </div>
+    </div>
+    <div class="news_events">
+    <div class="news_t1">今日论坛排名</div><div class="news_t2"><a href="#">更多排名</a></div>
+	<table class="news_ta">
+    	<tr>
+        <td><img src="images/nx1.jpg" /><a href="#">拉布拉多俱乐部</a></td><td><font color="#FF0000">20</font></td>
+        </tr>
+        <tr>
+        <td><img src="images/nx2.jpg" /><a href="#">雪纳瑞俱乐部</a></td><td><font color="#FF0000">5</font></td>
+        </tr>
+        <tr>
+        <td><img src="images/nx3.jpg" /><a href="#">辽宁爱狗俱乐部</a></td><td><font color="#FF0000">4</font></td>
+        </tr>
+        <tr>
+        <td><img src="images/nx4.jpg" /><a href="#">贵宾俱乐部</a></td><td><font color="#009900">3</font></td>
+        </tr>
+        <tr>
+        <td><img src="images/nx5.jpg" /><a href="#">黑龙江爱狗俱乐部</a></td><td><font color="#009900">3</font></td>
+        </tr>
+        <tr>
+        <td><img src="images/nx6.jpg" /><a href="#">腊肠俱乐部</a></td><td><font color="#009900">3</font></td>
+        </tr>
+        <tr>
+        <td><img src="images/nx7.jpg" /><a href="#">伯恩山俱乐部</a></td><td><font color="#009900">3</font></td>
+        </tr>
+        <tr>
+        <td><img src="images/nx8.jpg" /><a href="#">德国牧羊犬俱乐部</a></td><td><font color="#009900">3</font></td>
+        </tr>
+        <tr>
+        <td><img src="images/nx9.jpg" /><a href="#">迷你品俱乐部</a></td><td><font color="#009900">3</font></td>
+        </tr>
+        <tr>
+        <td><img src="images/nx10.jpg" /><a href="#">柴犬俱乐部</a></td><td><font color="#009900">2</font></td>
+        </tr>
+        <tr>
+        <td><img src="images/nx11.jpg" /><a href="#">巴哥俱乐部</a></td><td><font color="#009900">2</font></td>
+        </tr>
+        <tr>
+        <td><img src="images/nx12.jpg" /><a href="#">北京犬俱乐部</a></td><td><font color="#009900">1</font></td>
+        </tr>
+        
+   </table>
+    </div>
+    <div class="down">
+    <div class="down_t1">犬种俱乐部</div>
+    <table class="down_ta" cellpadding="0" cellspacing="0">
+    	<tr>
+        <td><img src="images/down_i1.jpg"/>
+        <div class="down_txt1"><a href="#">贵宾/泰迪俱乐部<font color="#FF8721">（142）</font></a></div>
+        <div class="down_txt2">主题：243757，帖数：5614603</div>
+        </td>
+        <td><img src="images/down_i2.jpg"/>
+        <div class="down_txt1"><a href="#">金毛寻回犬俱乐部<font color="#FF8721">（262）</font></a></div>
+        <div class="down_txt2">主题：156734，帖数：2868524</div>
+        </td>
+        <td><img src="images/down_i3.jpg"/>
+        <div class="down_txt1"><a href="#">萨摩耶俱乐部<font color="#FF8721">（54）</font></a></div>
+        <div class="down_txt2">主题：74004，帖数：127556</div>
+        </td>
+        <td><img src="images/down_i4.jpg"/>
+        <div class="down_txt1"><a href="#">松狮俱乐部<font color="#FF8721">（26）</font></a></div>
+        <div class="down_txt2">主题：29137，帖数：784591</div>
+        </td>
+        <td><img src="images/down_i9.jpg"/>
+        <div class="down_txt1"><a href="#">拉布拉多俱乐部<font color="#FF8721">（160）</font></a></div>
+        <div class="down_txt2">主题：98276，帖数：2136468</div>
+        </td>
+        </tr>
+        <tr>
+       <td><img src="images/down_i5.jpg"/>
+       <div class="down_txt1"><a href="#">雪纳瑞俱乐部<font color="#FF8721">（79）</font></a></div>
+       <div class="down_txt2">主题：55626，帖数：1152456</div>
+       </td>
+        <td><img src="images/down_i6.jpg"/>
+        <div class="down_txt1"><a href="#">边境牧羊犬俱乐部<font color="#FF8721">（164）</font></a></div>
+        <div class="down_txt2">主题：66025，帖数：1397976</div>
+        </td>
+        <td><img src="images/down_i7.jpg"/>
+        <div class="down_txt1"><a href="#">苏牧喜乐蒂俱乐部<font color="#FF8721">（49）</font></a></div>
+        <div class="down_txt2">主题：32852，帖数：970405</div>
+        </td>
+        <td><img src="images/down_i8.jpg"/>
+        <div class="down_txt1"><a href="#"> 阿拉斯加俱乐部<font color="#FF8721">（184）</font></a></div>
+        <div class="down_txt2">主题：542154，帖数：930470</div>
+        </td>
+        <td><img src="images/down_i10.jpg"/>
+        <div class="down_txt1"><a href="#">哈士奇俱乐部<font color="#FF8721">（59）</font></a></div>
+        <div class="down_txt2">主题：26764，帖数：496743</div>
+        </td>
+        </tr>
+    </table>
+    </div>
+	<img src="images/phone.jpg" alt="" width="953" height="87" /><br />
+  	</div>
+    	
+	
+	<div id="footer">
+		<div>
+			<a href="index.html">首页</a> | <a href="hero">事迹</a> | <a href="knowledge.html">知识</a> | <a href="peotect.html">保护</a> | <a href="film.html">电影</a> | <a href="luntan">论坛</a>
+		</div>
+	</div>
+	<div id="copyright">
+		Copyright &copy;. All rights reserved. Design from <a href="http://www.cssmoban.com" target="_blank" title="Free Templates">zjweu.edu.com</a>
+	</div>
+</body>
+</html>

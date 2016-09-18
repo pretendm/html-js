@@ -1,0 +1,343 @@
+﻿<html>
+	<head>
+		<title>protect</title>
+		<style>
+		html{
+			width:100%;
+			height:100%;
+			background-image:url(images/top_bg.gif);
+			background-position:top left;
+			background-repeat:repeat-x;
+			}
+		body{
+			width:995px;
+			height:100%;
+			margin:0 auto;
+			background-image:url(images/projectdog.jpg);
+			background-position:top left;
+			background-repeat:no-repeat;
+			color:#333333;
+			}
+		img{
+			border:0;
+			}
+		.list{
+			background-image:url(images/menu_bg.jpg);
+			background-image:top left;
+			background-repeat:no-repeat;
+			margin:250px 0 0 0;
+			float:left;
+			width:995px;
+			height:64px;
+			text-align:center
+			}
+		.list ul{
+			width:624px;
+			margin:0 auto;
+			}
+		.list li{
+			float:left;
+			list-style-type:none;
+			}
+		.list li a{
+			display:block;
+			float:left;
+			height:54px;
+			background-position:bottom;
+			background-repeat:no-repeat
+			}
+		.list li a:hover{
+			background-image:url(images/arrow.gif);
+			}
+		.list li a.active{
+			background-image:url(images/arrow.gif);
+			}
+		#main{
+			background-image:url(images/content_bg.gif);
+			background-position:top left;
+			background-repeat:repeat-y;
+			float:left;
+			width:953px;
+			margin:0 0 0 21px;
+			display:inline
+			}
+		.advers{
+			font-weight: bold;
+			color: #000;
+			background-color:#CCC;
+			display: block;
+			float: left;
+			height: 18px;
+			width: 20px;
+			border: 1px solid #333;
+			margin-left: 5px;
+			}
+		.advers:hover{
+			color:#FFF;
+			}
+		.number_a{
+			position:relative;
+			z-index:2;
+			left:800px;
+			top:-20px;
+			width:200px;
+			text-align:center;
+			}
+		.adRotator{
+			margin-left:auto;
+			margin-right:auto;
+			width:935px;
+			height:355px;
+			}
+		.number_bg{
+			width:920px;
+			height:20px;
+			background-color:#666;
+			}
+		.right{
+			float:right;
+			font-weight:bold;
+			color:#933;
+		}
+		.content_2{
+			margin:0 auto 0 auto;
+			width:935px;
+			height:20px;
+		}
+		.content_3 ul li{
+			float:left;
+			list-style:none;	
+			text-decoration:none;
+			margin-right:20px;
+			width:200px;
+		}
+		
+		.hot-block{
+			width:200px;
+			height:60px;
+		}
+		.black{
+			color:#933;
+			font-size:12px;
+		}
+		a{
+			text-decoration:none;
+			font-family:"微软雅黑";
+		}
+		p{
+			color:#666;
+		}
+		.content_3{
+			width:935px;
+			height:300px;
+			margin-left:auto;;
+			margin-right:auto;
+			padding:0 0 0 0;
+		}
+		.xinwen{
+			text-align:center;
+			color:#933;
+			margin-left:400px;
+		}
+		.content_4{
+			width:935px;
+			height:330px;
+			margin-left:auto;
+			margin-right:auto;
+			padding:0 0 0 0;
+		}
+		.left{
+			width:315px;
+			height:330px;
+			float:left;
+			margin-right:10px;
+		}
+		.news-list{
+			width:350px;
+			height:330px;
+			float:left;
+			margin-right:10px;
+		}
+		.news-list li a{
+			color:#666;
+			font-family:"微软雅黑";	
+		}
+		.news-list-right{
+			width:240px;
+			height:330px;
+			float:left;
+		}
+		.phone{
+			margin-left:21px;
+			}
+		.footer{
+			width:953px;
+			text-align:center;
+			padding:10px 0;
+			font-size:12px;
+			}
+		.copyright{
+			width:953px;
+			text-align:center;
+			padding:10px 0;
+			font-size:12px;
+			}
+		.bottom a{
+				color:#000000;
+			}
+			#meta{
+float:right;
+padding:31px 70px 0 0
+}
+#meta a{
+color:#42030E;
+text-decoration:underline;
+display:block;
+float:left;
+font-size:12px;
+}
+#meta a:visited{text-decoration:underline}
+#meta a:hover{text-decoration:none}
+#meta span{
+padding:0 25px 0 0;
+float:left
+}
+#meta img{
+float:left;
+margin:0 6px 0 0;
+}
+		</style>
+<script type="text/javascript">
+function adver(d1) {
+	var NowFrame = 1;   //最先显示第一张图片
+	var MaxFrame = 9;   //一共五张图片
+	if(Number(d1)){
+		clearTimeout(theTimer);  //当触动按扭时，清除计时器
+		NowFrame=d1;                //设当前显示图片
+		}
+	for(var i=1;i<(MaxFrame+1);i++){
+		if(i==NowFrame){
+			document.getElementById("adverImg").src ="images/adv"+i+".jpg";   //显示当前图片
+		 }
+	}
+	if(NowFrame == MaxFrame){   //设置下一个显示的图片
+		NowFrame = 1;
+		}
+	else{
+		NowFrame++;
+		}
+}
+window.onload=adver;    //页面加载时运行函数adver()
+var theTimer=setInterval('adver()', 3000);   //设置定时器，显示下一张图片
+</script>
+
+	</head>
+	
+	<body>
+		<div class="banner">
+        <div id="meta">
+		<span><img src="images/meta1.gif" alt="" width="15" height="15" /> <a href="index.html">首页</a></span>																																																				<div style="position:absolute;top:1px;left:1px;height:0px;width:0px;overflow:hidden"><h1><a href="http://www.cssmoban.com">best free templates</a></h1></div>
+		<span><img src="images/meta2.gif" alt="" width="15" height="15" /> <a href="#">论坛</a></span>
+	</div>
+          <div class="logo"></div>
+          <div class="list">
+			<ul>
+			<li><a href="index.html"><img src="images/but1.jpg" alt="" width="104" height="36" /></a></li>																														
+			<li><a href="hero.html"><img src="images/but2.jpg" alt="" width="104" height="36" /></a></li>
+			<li><a href="knowledge.html"><img src="images/but3.jpg" alt="" width="104" height="36" /></a></li>
+			<li><a href="protect.html" class="active"><img src="images/but4.jpg" alt="" width="104" height="36" /></a></li>
+			<li><a href="film.html"><img src="images/but5.jpg" alt="" width="104" height="36" /></a></li>
+			<li><a href="luntan.html"><img src="images/but6.jpg" alt="" width="104" height="36" /></a></li>
+			</ul>
+		  </div>
+        </div>
+		
+		<div id="main">
+		
+    	   <div class="adRotator">
+			<img src="images/adv1.jpg" alt="scroll" id="adverImg" width="935"/>
+            <div class="number_bg"></div>
+			<div class="number_a">
+				<a href="javascript:adver(1)" class="advers">1</a>
+				<a href="javascript:adver(2)" class="advers">2</a>
+				<a href="javascript:adver(3)" class="advers">3</a>
+				<a href="javascript:adver(4)" class="advers">4</a>
+				<a href="javascript:adver(5)" class="advers">5</a>
+			</div>
+		   </div>
+		   
+		   <div class="content_2">
+				<p><span><strong style="color:#933">流浪狗的现状</strong></span><span class="right">更多>></span></p>
+			</div>
+			
+		<div class="content_3">
+			<ul>
+				<li><a href="#"><img src="images/rd1.jpg" width="90%" />
+						<div class="hot-block">
+							<p style="color:#000"><strong>悲惨的境遇</strong></p>
+							<p style="font-size:12px;">残疾狗拖着瘫痪了的后躯吃力地避开过往的车辆，以及它那无助的神情，让无数友掉眼泪。</p>
+							<p class="black">详情>></p></a>
+						</div>
+				</li>
+				<li><a href="#"><img src="images/rd2.jpg" width="90%" />
+						<div class="hot-block">
+							<p style="color:#000"><strong>一个狗妈妈与90条流浪狗</strong></p>
+							<p style="font-size:12px;">她独自一人养着90条流浪狗，为流浪狗撑起了一个家。每年的狗粮的费用上万，尽管家里反对...</p>
+							<p class="black">详情>></p></a>
+						</div>
+				</li>
+				<li><a href="#"><img src="images/rd3.jpg" width="90%" />
+						<div class="hot-block">
+							<p style="color:#000"><strong>我本美丽·为爱变身</strong></p>
+							<p style="font-size:12px;">协会爱传递#领养系列活动之“我本美丽·为爱变身”活动，是中国首次流浪犬美容比赛，所有参...</p>
+							<p class="black">详情>></p></a>
+			            </div>
+				</li>
+
+				<li><a href="#"><img src="images/rd4.jpg" width="90%" />
+						<div class="hot-block">
+							<p style="color:#000"><strong>加温时光</strong></p>
+							<p style="font-size:12px;">中国小动物保护协会2016年义卖台历温暖发行！愿这份承载我们对动物的关怀与爱意的台历...</p>
+							<p class="black">详情>></p></a>
+			            </div>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="content_4">
+			<div class="left">
+				<p style="color:#933"><strong>志愿者活动</strong></p>
+				<div><a href="#" target="_blank"><img src="images/zy.bmp" width="315" height="262" /></a></div>
+			</div>
+			<div class="news-list">
+				<p style="color:#933"><strong>新闻资讯</strong></p>
+				<ul>
+					<li><a href="#" >广东人民出版社携手协会发起书刊出版众筹项目</a></li>
+					<li><a href="#" >爱，是点滴的凝聚</a></li>
+					<li><a href="#" >谁与我们一起爱Ta</a></li>
+					<li><a href="#" >支持两会“禁止猫狗肉制品进入餐饮市场”提案！</a></li>
+					<li><a href="#" >猫小主开饭啦！！！</a></li>
+					<li><a href="#" >绝育，给它更健康的爱</a></li>
+					<li><a href="#" >#同爱一起长大#之“从小爱做起，让大爱延伸”</a></li>
+					<li><a href="#" >高校捐赠活动全面开启</a></li>
+				</ul>
+				<p style="margin-left:40px;"><a href="#" class="black">更多 >></a></p>
+			</div>
+			<div class="news-list-right">
+				<p style="color:#933"><strong>流浪动物基地</strong></p>
+				<img src="images/123.jpg" width="236" height="122"/>
+				<img src="images/456.jpg" width="236" height="122"/>
+			</div>
+		</div>
+	</div>
+	
+	 <div class="phone"><img src="images/phone.jpg" alt="" width="953" height="87" /></div>
+          <div class="footer">
+		      <div class="bottom">
+			      <a href="index.html">首页</a> | <a href="hero">事迹</a> | <a href="knowledge.html">知识</a> | <a href="peotect.html">保护</a> | <a href="film.html">电影</a> | <a href="luntan">论坛</a>
+		      </div>
+	     <div class="copyright">
+		        Copyright &copy;. All rights reserved. Design from <a href="#">zjweu.edu.com</a>
+	     </div>
+	</body>
+</html>
